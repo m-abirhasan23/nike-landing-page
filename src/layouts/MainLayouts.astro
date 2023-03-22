@@ -1,0 +1,14 @@
+---
+import Navbar from "../components/Navbar.astro";
+import HeadLayouts from "./HeadLayouts.astro";
+const { title } = Astro.props;
+console.log(title);
+---
+
+<html lang="en">
+  <HeadLayouts title={title} />
+  <body>
+    <Navbar />
+    <slot>defualt text</slot>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+
+:root {
+  /* colors list  */
+
+  --clr-white: rgba(255, 255, 255, 1);
+  --clr-white-40: rgba(255, 255, 255, 0.35);
+  --clr-grey: rgba(126, 126, 126, 1);
+  --clr-light-grey: rgba(245, 245, 245, 1);
+  --clr-black: rgba(17, 17, 17, 1);
+  --clr-black-40: rgba(17, 17, 17, 0.3);
+  /* fonts list  */
+
+  /* font size list  */
+  --h6: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
+  --h5: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --h4: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+  --h3: clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);
+  --h2: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+  --h1: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  /* box shadow list  */
+  /* padding&margin list  */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}

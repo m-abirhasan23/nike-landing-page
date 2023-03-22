@@ -1,0 +1,14 @@
+---
+import "../styles/index.css";
+import "../styles/reset.css";
+
+const { title } = Astro.props;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/jordan.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+</head>

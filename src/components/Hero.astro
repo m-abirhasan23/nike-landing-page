@@ -1,0 +1,66 @@
+---
+import { Image } from "@astrojs/image/components";
+
+// asserts
+import bg from "../../public/image.png";
+---
+
+<section class="hero-section">
+  <div class="hero-img">
+    <Image src={bg} alt="" aspectRatio={16 / 9} typeof="avif" />
+  </div>
+  <div class="hero-info">
+    <span>Beyond</span>
+    <h1>Every Step Is A Chance To Fly</h1>
+    <button> Watch</button>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .hero-img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-img > img {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    object-position: center;
+  }
+  .hero-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  span {
+    margin-block: 1rem;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: var(--h1);
+    line-height: 120%;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: var(--clr-black);
+    border: 1px solid currentColor;
+    color: var(--clr-white);
+
+    width: 150px;
+    font-size: var(--h4);
+    border-radius: 50px;
+
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
