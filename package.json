@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.16.1",
-    "@heroicons/react": "^2.0.16",
     "astro": "^2.1.4",
+    "astro-heroicons": "^0.3.0",
     "sharp": "^0.31.3"
   }
 }

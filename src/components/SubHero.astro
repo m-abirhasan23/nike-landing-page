@@ -1,0 +1,88 @@
+---
+import { Image } from "@astrojs/image/components";
+// asserts
+import jordan from "../../public/jordan.png";
+---
+
+<section class="hero-section">
+  <div class="hero-img">
+    <Image src={jordan} alt="" typeof="avif" />
+  </div>
+  <div class="hero-info">
+    <p>
+      Chasing your dreams is a journey. But no matter how many obstacles you
+      face, the most important step is a simple one—believing in yourself. When
+      you believe in yourself, you can fly—overcoming fears, limits, and
+      whatever stands in your way.eyond
+    </p>
+
+    <div class="button-group">
+      <button>
+        <span>Learn More</span>
+      </button>
+      <button>
+        <span>Shop Jordan</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .hero-img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-img > img {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    object-position: center;
+  }
+  .hero-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  p {
+    margin-block: 1rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  button {
+    background-color: var(--clr-black);
+    border: 1px solid currentColor;
+    color: var(--clr-white);
+
+    width: 200px;
+
+    border-radius: 30px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  button span {
+    font-size: var(--h5);
+    font-weight: bold;
+  }
+</style>
