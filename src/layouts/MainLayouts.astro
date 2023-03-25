@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import HeadLayouts from "./HeadLayouts.astro";
 const { title } = Astro.props;
@@ -10,5 +11,6 @@ console.log(title);
   <body>
     <Navbar />
     <slot>defualt text</slot>
+    <Footer />
   </body>
 </html>

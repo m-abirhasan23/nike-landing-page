@@ -1,0 +1,37 @@
+---
+import { Image } from "@astrojs/image/components";
+import img1 from "../../public/export-jordan-1.png";
+import img2 from "../../public/export-jordan-2.png";
+const imgs = [img1, img2];
+---
+
+<section aria-label="export jordan">
+  <div class="container">
+    {
+      imgs.map((img) => (
+        <Image
+          src={img}
+          alt=""
+          typeof="avif"
+          aspectRatio={4 / 6}
+          class="image"
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    gap: 10px;
+  }
+
+  .image {
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+</style>

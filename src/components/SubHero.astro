@@ -2,6 +2,7 @@
 import { Image } from "@astrojs/image/components";
 // asserts
 import jordan from "../../public/jordan.png";
+import Button from "../layouts/Button.astro";
 ---
 
 <section class="hero-section">
@@ -17,12 +18,8 @@ import jordan from "../../public/jordan.png";
     </p>
 
     <div class="button-group">
-      <button>
-        <span>Learn More</span>
-      </button>
-      <button>
-        <span>Shop Jordan</span>
-      </button>
+      <Button buttonText={"Learn More"} />
+      <Button buttonText={"Shop Jordan"} />
     </div>
   </div>
 </section>
