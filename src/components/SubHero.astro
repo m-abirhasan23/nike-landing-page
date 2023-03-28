@@ -82,4 +82,13 @@ import Button from "../layouts/Button.astro";
     font-size: var(--h5);
     font-weight: bold;
   }
+
+  @media (max-width: 600px) {
+    .hero-img > img {
+      width: 100vw !important;
+    }
+    .hero-info p {
+      width: 100%;
+    }
+  }
 </style>

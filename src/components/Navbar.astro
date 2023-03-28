@@ -29,6 +29,34 @@ import logo from "../assets/jordan.svg";
       <a href="#"><Image src={cart} alt="" width={20} /></a>
       <a href="#"><Image src={heart} alt="" width={20} /></a>
     </div>
+
+    <div class="menu">
+      <span class="openMenu active">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#252525"
+          viewBox="0 0 256 256"
+          ><path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+          ></path></svg
+        >
+      </span>
+
+      <span class="closeMenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#252525"
+          viewBox="0 0 256 256"
+          ><path
+            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+          ></path></svg
+        >
+      </span>
+    </div>
   </nav>
 </header>
 
@@ -74,4 +102,38 @@ import logo from "../assets/jordan.svg";
     margin-left: 10px;
     text-decoration: none;
   }
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .menu {
+      display: block;
+    }
+    .openMenu {
+      display: none;
+    }
+    .openMenu.active {
+      display: block;
+    }
+    .closeMenu {
+      display: none;
+    }
+
+    .navigation ul,
+    .icons {
+      display: none;
+    }
+  }
 </style>
+
+<script accesskey="">
+  const menu = document.querySelector(".menu");
+  const openBtn = document.querySelector(".openMenu");
+  const closeMenu = document.querySelector(".closeMenu");
+  openBtn.addEventListener("click", () => {
+    openBtn.classList.toggle("active");
+    closeMenu.classList.toggle("active");
+    console.log("clicked");
+  });
+</script>

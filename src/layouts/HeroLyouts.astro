@@ -17,7 +17,7 @@ const { title, subtitle, img, span, svg, buttonText } = data.heroData;
     <h1>{title}</h1>
 
     {subtitle && <p>{subtitle}</p>}
-    <Button {buttonText}/>
+    <Button {buttonText} />
   </div>
 </section>
 
@@ -73,5 +73,24 @@ const { title, subtitle, img, span, svg, buttonText } = data.heroData;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .hero-section {
+      width: 100%;
+      margin: 2rem auto;
+    }
+    .hero-img > img {
+      height: 500px;
+    }
+    h1 {
+      width: 90%;
+      margin-inline: auto;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    p {
+      text-align: center;
+    }
   }
 </style>
